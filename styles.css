@@ -2,7 +2,7 @@ body {
     padding-top: 70px;
 }
 
-* {
+:root {
     --blue: #00ACEE;
     --white: #FFFFFF; 
     --cerulean-blue: #4059AD;
