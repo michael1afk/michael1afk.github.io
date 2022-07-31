@@ -1,0 +1,302 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@michael1afk 
+michael1afk
+/
+michael1afk.github.io
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+michael1afk.github.io/styles.css
+@michael1afk
+michael1afk renamed files
+…
+Latest commit 9ab5903 2 hours ago
+ History
+ 1 contributor
+258 lines (204 sloc)  4.34 KB
+
+* {
+    --blue: #00ACEE;
+    --white: #FFFFFF; 
+    --cerulean-blue: #4059AD;
+    --peach: #DB504A;
+    --black: #000000;
+    --dark: #424651;
+
+    font-family: 'Open Sans', sans-serif;
+
+    padding: 0;
+    margin: 0;
+
+
+    box-sizing: border-box; 
+
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 70px;
+}
+
+#navbar {
+    background-color: var(--blue);
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 100;
+}
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    
+    padding-left:  30px;
+    padding-right: 30px ;
+
+    line-height: 70px;
+    font-size: 25px;
+
+}
+
+.nav-link:hover {
+    background-color: var(--cerulean-blue)
+}
+
+#welcome-section {
+    background-image: linear-gradient( 30deg, rgba(0, 0, 0, 0.74), var(--black));
+    color: white;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-title {
+    font-size: 60px;
+}
+
+#welcome-subtitle {
+    font-size: 34px;
+    font-weight: 400;
+    font-style: italic;
+
+    color: var(--blue);
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--cerulean-blue);
+
+    padding-top: 1em;
+    padding-bottom:  3em;
+}
+
+#project-setion-header {
+    color: var(--white);
+    font-size: 35px;
+    font-weight: 600;
+
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-bottom: 0.2em;
+
+    border-bottom: 1px solid white;
+
+    margin-bottom: 20px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1200px) {
+    #projects-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 400px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.527);
+   
+    transition: transform 0.25s ease-out;
+}
+
+.project-link:hover {
+    transform: scale(1.1);
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+}
+
+
+.project-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 1em;
+    padding-left: -10px;
+}
+
+
+.project-title-container > * {
+    margin-right: 10px;
+}
+.project-title-container :first-child,
+.project-title-container :last-child {
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+    color: var(--blue);
+}
+
+.project-title-container:hover :first-child,
+.project-title-container:hover :last-child {
+    opacity: 1;
+} 
+
+
+#profile-link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: var(--dark);
+    color: var(--white);
+
+    box-sizing: border-box;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 10px;
+    padding-left: 10px;
+
+
+    transition: all 0.25s linear;
+}
+
+#profile-link:hover {
+    background-color: var(--peach);
+    padding-right: 8px;
+}
+#profile-link:hover #profile-link-text {
+    margin-right: 2px;
+}
+#profile-link-text {
+    font-family: 'Mulish', sans-serif; 
+    font-weight: 700;
+
+    transition: all 0.25s linear;
+}
+
+#contact-section {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark);
+    color: var(--white);
+}
+#contact-info-container {
+    display: flex;
+    align-items: center;
+}
+#contact-section-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0px;    
+}
+
+#contact-section-subtitle {
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+.contact-info {
+    display: inline-flex;
+    align-items: center;
+    
+    cursor: pointer;
+    margin-right: 40px;
+
+    transition: transform 0.25s ease-out;
+}
+#contact-info-container {
+    display: flex;
+    align-items: center;
+}
+.contact-info:hover {
+    transform: translateY(10px);
+}
+.contact-info-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+.contact-info:nth-of-type(2) svg{
+    height: 30px;
+    border-radius: 15px;
+}
+.contact-info-text {
+    font-size: 20px;
+    white-space: nowrap;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
