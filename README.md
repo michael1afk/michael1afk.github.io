@@ -1,2 +1,2 @@
-# michael1afk.githuub.io
+# michael1afk.github.io
 My Personal Portfolio 
