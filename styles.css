@@ -1,14 +1,39 @@
+@ -1,306 +1,273 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@michael1afk 
+michael1afk
+/
+michael1afk.github.io
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+michael1afk.github.io/styles.css
+@michael1afk
+michael1afk renamed files
+…
+Latest commit 9ab5903 2 hours ago
+ History
+ 1 contributor
+258 lines (204 sloc)  4.34 KB
+
 body {
     padding-top: 70px;
 }
 
 * {
-    --blue: #00ACEE;
-    --white: #FFFFFF; 
-    --cerulean-blue: #4059AD;
-    --peach: #DB504A;
-    --black: #000000;
-    --dark: #424651;
     font-family: 'Open Sans', sans-serif;
 
     padding: 0;
