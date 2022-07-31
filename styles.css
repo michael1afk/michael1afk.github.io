@@ -2,14 +2,7 @@ body {
     padding-top: 70px;
 }
 
-:root {
-    --blue: #00ACEE;
-    --white: #FFFFFF; 
-    --cerulean-blue: #4059AD;
-    --peach: #DB504A;
-    --black: #000000;
-    --dark: #424651;
-
+* {
     font-family: 'Open Sans', sans-serif;
 
     padding: 0;
@@ -17,6 +10,15 @@ body {
 
 
     box-sizing: border-box; 
+}
+
+:root {
+    --blue: #00ACEE;
+    --white: #FFFFFF; 
+    --cerulean-blue: #4059AD;
+    --peach: #DB504A;
+    --black: #000000;
+    --dark: #424651;
 
     scroll-behavior: smooth;
 }
