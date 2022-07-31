@@ -5,7 +5,7 @@ Issues
 Marketplace
 Explore
  
-{@michael1afk 
+@michael1afk 
 michael1afk
 /
 michael1afk.github.io
@@ -28,7 +28,13 @@ Latest commit 9ab5903 2 hours ago
  1 contributor
 258 lines (204 sloc)  4.34 KB
 
+
+
+
+body {
+    padding-top: 70px;
 }
+
 * {
     --blue: #00ACEE;
     --white: #FFFFFF; 
@@ -47,11 +53,6 @@ Latest commit 9ab5903 2 hours ago
 
     scroll-behavior: smooth;
 }
-
-body {
-    padding-top: 70px;
-}
-
 #navbar {
     background-color: var(--blue);
 
